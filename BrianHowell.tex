@@ -1,0 +1,125 @@
+\let\nofiles\relax % This is because res says to not emit aux files,
+                   % but lastpage needs aux files.
+\documentclass[margin,line]{res}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{etaremune}
+\usepackage[normalem]{ulem}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\voffset -25pt
+%\topmargin -.2in
+\headsep 25pt
+\textwidth=6.0in
+\textheight=9.3in
+\itemsep=0in
+\parsep=0in
+
+% Headings
+\pagestyle{fancy}
+\lhead{Brian Howell --- Curriculum Vitae}
+\chead{}
+\rhead{\thepage\ of \pageref*{LastPage}}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+\newcommand{\myname}{Brian Howell}
+\newlength{\mynamewidth}
+\settowidth{\mynamewidth}{\namefont\myname}
+\name{\hspace*{0.5\textwidth}\hspace{-0.5\mynamewidth} \myname \vspace*{.1in}}
+% On the first page, have no header.
+\thispagestyle{empty}
+
+\begin{resume}
+
+\input{ContactContent.tex}
+
+\section{\sc Education}
+{\bf Ph.D., Mechanical Engineering,} University of California, Berkeley \hfill {\bf Sept. 2019 - present}\\
+\vspace*{-.1in}
+\begin{itemize}
+	\item[ ] Advisor: Tarek Zohdi
+	\item[ ] Dissertation Title: Dynamic optimization for direct-ink-write additive manufacturing
+	%\item[ ] G.P.A.: 
+\end{itemize}
+
+
+{\bf B.S., Chemical Engineering,} Brigham Young University \hfill {\bf April. 2017}\\
+\vspace*{-.1in}
+%\begin{itemize}
+%\item[ ] 
+%\item[ ] G.P.A.: 
+%\end{itemize}
+
+\section{\sc Research Interests}
+My research interests lie in numerical optimization for multiphysics problems allowing for generous flexibility in application. My current PhD and research interests reside in dynamic optimization for non-Newtonian flow, however I enjoy applying optimization principles to other hobbies such as performance cycling.
+
+\section{\sc Research}
+{\bf Staff Scientist/Engineer,} Lawrence Livermore National Laboratory
+\hfill {\bf June 2017--Present}\\
+My research is primarily focused on the practical and numerical optimization of non-Newtonian flow for 3D printing. On the practical front, this includes  chemical formulation, mechanical construction and software development. Numerically this includes multiphysics modeling and simulation, as well as global optimization over solution domains for the most efficient input parameters. The direction of these interconnected areas is intelligent feedback control for 3D printing.\\
+\\
+{\bf Research Assistant,} Zucrow Propulsion Lab, Purdue University
+\hfill {\bf Spring 2016 - Fall 2016}\\
+During this summer, I oversaw a project of modifying propellant sensitivity by utilizing the piezoelectric effect. The materials I developed exhibited initiation properties that could be modified under varying electric fields. Subsequent testing to determine the underlying mechanisms allowed me to construct a device to control initiation sensitive based on the direction of the electric field.\\
+\\
+{\bf Research Assistant,} Placental Signaling Lab, Brigham Young University
+\hfill {\bf Fall 2013 - Fall 2015}\\
+During my first years as an undergraduate, I worked on identifying specific proteins associated with pregnancy complications and lung disease. This included drug testing and organ harvesting from genetically-controlled rats, tissue preparation, immunoprecipitation, western blotting, RNA isolation, cDNA production, and polymerase chain reaction testing. 
+
+\section{\sc Experience}
+{\bf Operating Room Orderly,} Intermountain Healthcare
+\hfill {\bf Winter 2013 - Winter 2016}\\
+As an undergraduate, I worked in operating room as an orderly. My time was providing all aspects of aid to improve the efficiency of procedures. This included managing anesthetic drugs for each operating room, assisting surgeons in holding retractors and equipment in sterile field for orthopedic cases, act as Laser Safety Officer for holmium YAG lasers in kidney stone cases, patient preparation and recovery.  \\
+
+{\bf Reviewer,} Utah Science Technology and Research Agency
+\hfill {\bf Fall 2017}\\
+Reviewed proposals from startup companies in the research and technology industry for first-round funding from the state of Utah and gave recommendations on qualifications. 
+
+
+\section{\sc Patents}
+1. \textbf{Howell, B. M.}; Giera B.; Murialdo, M.; Sullivan, K.; Machine Learning Informed Control Systems for Extrusion Printing Porcess. US 16/562,253. \\
+
+2. Murialdo, M.; Giera, B.; \textbf{Howell, B. M.}; Panas, R.; Optical Authentication of Images. US 16/571.586. 
+
+\section{\sc Publications}
+1. \textbf{Howell, B. M.};, Cook, C. C.; Grapes, M. D.; Robertson, E. L.; Sullivan, K. T.; Duoss, E. B.; Bukovsky, E. V.; Spatially Controlled Printing of Dual-Curing Urethane Elastomers. \textit{Manuscript}.   
+
+2. Alexander K.; Nelson M.; \textbf{Howell, B. M.}; Mejia C; Jones C; Reynolds P; and Arroyo J.A.; Differential Receptor for Advanced Glycation End-Products (RAGE) Expression in Preeclamptic, Intrauterine Growth Restricted, and Gestational Diabetic Placentas. Am J Reprod Immunol. 2015 Dec 19.
+
+3. Jimenez F.R1.; Belgique S.T.; Lewis J.B.; Albright S.A.; Jones C.M.; \textbf{Howell, B. M.}; Mika A.P.; Jergensen T.R.; Gassman J.R.; Morris R.J.; Arroyo J.A.; Reynolds P.R.; Conditional pulmonary overexpression of Claudin 6(Cldn6) during embryogenesis delays lung morphogenesis. Int J Dev Biol. 2015 Jul 22.
+
+\section{\sc Conferences}
+1. \textbf{Howell, B. M.}$^*$; Bukovsky, E. V.; Cook, C. C.; Golobic, A. M.; Sullivan, K. T.; Gash, A. E. (U)"Polymer Resin Systems for Precision Direct-Ink-Write Printing of Solids-Loaded Inks" LLNL-PRES-759661, presentation only, AIChE Annual Meeting 2018, Pittsburgh, PA, October 2018.\\
+
+2. Bukovsky, E. V.; \textbf{Howell, B. M.}$^*$; Martinez, H. P.; Durban, M. M.; Grapes, M. D.; Golobic, A. M.; Sullivan, K. T.; Gash, A. E. (U)"Polymer Resin Systems for Precision Direct-Ink-Write Printing of Thermite Loaded Inks" LLNL-PRES-754246, presentation only, 43rd International Pyrotechniques Society Seminar, Fort Collins, CO, July 2018.\\
+
+3. \textbf{Howell, B. M.}$^*$; Bukovsky, E. V.; Grapes, M. D.; Golobic, A. M.; Gash, A. E.; Sullivan, K. T. (U)"Pragmatic Approach Towards Highly Solids Loaded Resins for Direct-Ink-Write Additive Manufacturing" LLNL-POST-751972, Energetic Materials Gordon Research Conference, Newry, ME, June 2018.\\
+
+4. Alexander K.; Lewis J. B.; Meija C.; \textbf{Howell, B. M.}$^*$; Reynolds, P. R.; and Arroyo, J. A.; “Differential Placental Expression of the Receptor for Advanced Glycation End-Products (RAGE) in Normal and Complicated Pregnancies“, poster at the 2015 Experimental Biology Annual meeting, Boston, MA, March 28th-April 1st, 2015.\\
+
+5. Aleksander P. M; \textbf{Howell, B. M.}$^*$; Reynolds, P. R.; and Arroyo, J. A. “Elevated Apoptosis in Ovine Intrauterine Growth Restriction (IUGR) is Associated with Increased Caspase 3 and 9 and Decreased Telomerase Activity”, poster at the 2015 Experimental Biology Annual meeting, Boston, MA, March 28th - April 1st, 2015.\\
+
+\section{\sc Academic \\ Reports}
+1. Yehia, O.; \textbf{Howell, B. M.}; Gunduz, I. E.; Son, S. F.; Bane, S. P.; Investigation of Piezoelectric Reactives as Tunable Energetics for Advanced Munitions. Report to Army Research Laboratory 2016 Aug 12.
+
+\section{\sc Languages}
+Enlish, Bahasa Malay\\
+
+\section{\sc Graduate Coursework}
+Advanced Dynamics, Robust Control, Finite Element Method, Continuum Mechanics, Numerical Solutions to Differential Equations 1 \& 2, Modeling and Simulation of Advanced Manufacturing Processes, Convex Optimization, 
+\\
+
+\end{resume}
+\end{document}
